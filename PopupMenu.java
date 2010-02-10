@@ -1,8 +1,8 @@
 //
 //  PopupMenu.java
-//  Amaras Example
+//  Amaras Example: popup menu as a windows right click menu
 /*
- * Amaras Example, Java PopupMenu and example implementation
+ * Amaras Example, Java PopupMenu (right-click) example implementation
  * Copyright (C) 2010  Morgan Prior
  * 
  * This program is free software: you can redistribute it and/or modify
