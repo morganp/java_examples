@@ -31,7 +31,7 @@ import javax.swing.event.*;
 import java.awt.event.*;
 
 public class PopupMenu{
-   //...where instance variables are declared:
+   //Instance variables
    JPopupMenu popup;
    
    //Constructor
@@ -78,6 +78,7 @@ public class PopupMenu{
        }
    }
  
+   //Action Listeners
    ActionListener actionMenuUp = new ActionListener () {
 	   public void actionPerformed(ActionEvent e) {
 	      System.out.println("ActionListener Up");
@@ -92,7 +93,7 @@ public class PopupMenu{
 
 
 
- 
+   //The main Method this runs when file Executed
    public static void main( String[] args ) {
 		System.out.println("Java Example Copyright (C) 2010  Morgan Prior");
    	System.out.println("This program comes with ABSOLUTELY NO WARRANTY; ");
