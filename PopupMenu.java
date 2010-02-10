@@ -20,6 +20,9 @@
  * 
  * Contact morgan.prior@gmail.com
  *
+ * to run example:
+ * $ javac PopupMenu.java
+ * $ java PopupMenu
  */
 import javax.swing.*;
 import javax.swing.event.*;
@@ -39,8 +42,8 @@ public class PopupMenu{
       JMenuItem  menuUp    = new JMenuItem("Up");
       JMenuItem  menuDown  = new JMenuItem("Down");
 
-      //menuUp.addActionListener     (actionUp);
-      //menuDown.addActionListener   (actionDown);
+      menuUp.addActionListener     (actionMenuUp);
+      menuDown.addActionListener   (actionMenuDown);
 
       popup.add( menuUp );
       popup.addSeparator();
@@ -74,7 +77,22 @@ public class PopupMenu{
            }
        }
    }
-  
+ 
+   ActionListener actionMenuUp = new ActionListener () {
+	   public void actionPerformed(ActionEvent e) {
+	      System.out.println("ActionListener Up");
+	   }
+	};
+
+   ActionListener actionMenuDown = new ActionListener () {
+	   public void actionPerformed(ActionEvent e) {
+	      System.out.println("ActionListener Down");
+	   }
+	};
+
+
+
+ 
    public static void main( String[] args ) {
 		System.out.println("Java Example Copyright (C) 2010  Morgan Prior");
    	System.out.println("This program comes with ABSOLUTELY NO WARRANTY; ");
